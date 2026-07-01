@@ -105,12 +105,12 @@ export default function CreateProject() {
           {/* Department */}
           <div>
             <label className="block text-xs text-gray-500 mb-1.5">
-              <span className="text-red-500 mr-0.5">*</span>Department:
+              Department:
             </label>
             <select
               value={formData.department}
               onChange={(e) => handleChange("department", e.target.value)}
-              className={`ueg-input w-full ${errors.department ? "border-red-500" : ""}`}
+              className="ueg-input w-full"
             >
               <option value="">Please select</option>
               {departments.map((dept) => (
@@ -119,9 +119,6 @@ export default function CreateProject() {
                 </option>
               ))}
             </select>
-            {errors.department && (
-              <p className="text-xs text-red-500 mt-1">{errors.department}</p>
-            )}
           </div>
         </div>
 

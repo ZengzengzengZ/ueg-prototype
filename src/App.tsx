@@ -3,7 +3,6 @@ import Layout from "@/components/Layout";
 import CreateProject from "@/pages/CreateProject";
 import ProjectEdit from "@/pages/ProjectEdit";
 import DataParsing from "@/pages/DataParsing";
-import AssetConfirm from "@/pages/AssetConfirm";
 import Generating from "@/pages/Generating";
 import MatrixResult from "@/pages/MatrixResult";
 import MatrixEdit from "@/pages/MatrixEdit";
@@ -17,7 +16,6 @@ export default function App() {
           <Route path="/" element={<ProjectEdit />} />
           <Route path="/create" element={<CreateProject />} />
           <Route path="/data-parsing" element={<DataParsing />} />
-          <Route path="/asset-confirm" element={<AssetConfirm />} />
           <Route path="/generating" element={<Generating />} />
           <Route path="/matrix-result" element={<MatrixResult />} />
           <Route path="/matrix-edit" element={<MatrixEdit />} />
